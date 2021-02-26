@@ -2,6 +2,6 @@
 
 ## Preview
 
-<img width="300" src="https://github.com/kukumoon/new-year-melody-maker/blob/master/preview.png">
+[Click Me!🐒](https://www.melody.lol)
 
-[Playing The Game From melody.lol](https://www.melody.lol)
+<img width="300" src="https://github.com/kukumoon/new-year-melody-maker/blob/master/preview.png">
