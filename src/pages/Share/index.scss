@@ -1,0 +1,87 @@
+.share-container {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: .08rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .img-container {
+    width: 100%;
+    height: 100%;
+    padding: 1.4% 0;
+    background: #171967;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  & .follow-modal {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: .08rem;
+    background: rgba(17, 19, 67, .9);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000000;
+
+    & .follow-text {
+      border: 2px solid red;
+      color: white;
+      font-size: .24rem;
+      padding: .1rem .2rem;
+      font-family: neo-font,sans-serif;
+      background: #171967;
+      text-align: center;
+    }
+
+    & .follow-btn {
+      height: .53rem;
+      width: 2.02rem;
+      background: url("./btn.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .tip {
+    font-family: neo-font,"PingFang SC", "Helvetica Neue", sans-serif;
+    animation: blink 3s linear infinite;
+    font-size: .15rem;
+    color: #00B01A;
+    position: absolute;
+    bottom: .04rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: .3rem;
+    text-align: center;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
