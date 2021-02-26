@@ -15,14 +15,14 @@ export default function () {
   // const sound = window.sound_results;
 
   // TODO 容错 （没有音乐或祝福的情况下有一个默认值避免回流无声音无祝福）
-  let url = `https://neotape.live/melody/?context=${encodeURIComponent(window.sound_results)}&refluence=1&wish=${encodeURIComponent(window.sentence_results)}`;
+  let url = `https://www.melody.lol/?context=${encodeURIComponent(window.sound_results)}&refluence=1&wish=${encodeURIComponent(window.sentence_results)}`;
   // let url = `http://localhost:3000/?context=${encodeURIComponent(window.sound_results)}&refluence=1&wish=${encodeURIComponent(window.sentence_results)}`;
 
   const [base64URL, setBaseURL] = useState('');
   const [follow, setFollow] = useState(false);
 
   getShortLink(url).then(({data}) => {
-    neoPosterGenerator(data.ShortUrl || url).then(res => {
+    neoPosterGenerator(url).then(res => {
       if (loaded) {
         return;
       }
